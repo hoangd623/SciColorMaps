@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SciColorMaps.WinForms</RootNamespace>
     <AssemblyName>SciColorMaps.WinForms</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -72,6 +73,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SciColorMapsForm.resx">
       <DependentUpon>SciColorMapsForm.cs</DependentUpon>
@@ -91,9 +93,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SciColorMaps\SciColorMaps\SciColorMaps.csproj">
-      <Project>{52e2ba31-1bee-4ecd-adc2-c9189b3c037d}</Project>
-      <Name>SciColorMaps</Name>
+    <ProjectReference Include="..\SciColorMaps\SciColorMaps.Portable\SciColorMaps.Portable.csproj">
+      <Project>{caa31c40-c298-4ab3-b022-3134a08be626}</Project>
+      <Name>SciColorMaps.Portable</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
